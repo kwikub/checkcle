@@ -57,7 +57,9 @@ Checkcle can be configured via environment variables or a `.env` file:
 | `CHECKCLE_PORT` | `8090` | HTTP port to listen on |
 | `CHECKCLE_DATA_DIR` | `./data` | Directory for persistent data |
 | `CHECKCLE_SECRET_KEY` | *(auto-generated)* | Secret key for session signing |
-| `CHECKCLE_LOG_LEVEL` | `info` | Log level (`debug`, `info`, `warn`, `error`) |
+| `CHECKCLE_LOG_LEVEL` | `debug` | Log level (`debug`, `info`, `warn`, `error`) |
+
+> **Personal note:** I changed the default log level to `debug` for my local setup — easier to trace issues while experimenting. Remember to set it back to `info` in any production deployment.
 
 ## Contributing
 
