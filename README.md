@@ -58,8 +58,11 @@ Checkcle can be configured via environment variables or a `.env` file:
 | `CHECKCLE_DATA_DIR` | `./data` | Directory for persistent data |
 | `CHECKCLE_SECRET_KEY` | *(auto-generated)* | Secret key for session signing |
 | `CHECKCLE_LOG_LEVEL` | `debug` | Log level (`debug`, `info`, `warn`, `error`) |
+| `CHECKCLE_CHECK_INTERVAL` | `60` | Default monitor check interval in seconds |
 
 > **Personal note:** I changed the default log level to `debug` for my local setup — easier to trace issues while experimenting. Remember to set it back to `info` in any production deployment.
+
+> **Personal note:** Added `CHECKCLE_CHECK_INTERVAL` to the table above — I kept tripping over the fact that it wasn't documented here, even though it's supported. Default is 60 seconds per the source.
 
 ## Contributing
 
@@ -82,4 +85,4 @@ This project is licensed under the MIT License. See [LICENSE](LICENSE) for detai
 ## Acknowledgements
 
 - Original project: [operacle/checkcle](https://github.com/operacle/checkcle)
-- Built with [PocketBase](https://pocketbase.io)
+- Built wi
